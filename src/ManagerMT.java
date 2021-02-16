@@ -15,6 +15,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 import javax.swing.JOptionPane;
 
@@ -127,6 +129,7 @@ public class ManagerMT {
         try {
             boolean Found=searchData(Person);
             if(!Found){
+            File InputFile=new File("src/utils/TherapistDataset.csv");
             BufferedReader reader = new BufferedReader(new FileReader("src/utils/TherapistDataset.csv"));
             File tempFile = new File("src/utils/Temp.csv");
             BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
@@ -165,14 +168,19 @@ public class ManagerMT {
                 PersonArray[2] = "0";
                 currentLine = String.join(",", PersonArray);
                 writer.write(currentLine + System.getProperty("line.separator"));
-                //boolean successful = tempFile.renameTo(inputFile);
+                
                 System.out.println("Success Fully Added");
                 
-            } else {
-                System.out.println("Already Found Record");
-            }
+            } 
+            
+//                System.out.println("\n00000ddd"+successful);
+    
             writer.close();
-            reader.close();}
+            reader.close();
+            InputFile.delete();
+            boolean successful = tempFile.renameTo(InputFile);
+                            System.out.println("\n00000ddd"+successful);
+            }
             else{
                 System.out.println("Already Found Theapist");
             }

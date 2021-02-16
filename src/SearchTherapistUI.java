@@ -248,38 +248,18 @@ public class SearchTherapistUI extends javax.swing.JFrame {
         CB2.setForeground(new java.awt.Color(51, 255, 153));
         CB2.setText("TUE");
         CB2.setEnabled(false);
-        CB2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CB2ActionPerformed(evt);
-            }
-        });
 
         CB1.setForeground(new java.awt.Color(51, 255, 153));
         CB1.setText("MON");
         CB1.setEnabled(false);
-        CB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CB1ActionPerformed(evt);
-            }
-        });
 
         CB4.setForeground(new java.awt.Color(51, 255, 153));
         CB4.setText("THU");
         CB4.setEnabled(false);
-        CB4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CB4ActionPerformed(evt);
-            }
-        });
 
         CB3.setForeground(new java.awt.Color(51, 255, 153));
         CB3.setText("WED");
         CB3.setEnabled(false);
-        CB3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CB3ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -449,11 +429,6 @@ public class SearchTherapistUI extends javax.swing.JFrame {
                 SortFeesMouseClicked(evt);
             }
         });
-        SortFees.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SortFeesActionPerformed(evt);
-            }
-        });
 
         buttonGroup1.add(SortExp);
         SortExp.setText("Experience");
@@ -584,26 +559,6 @@ public class SearchTherapistUI extends javax.swing.JFrame {
             Mng.openWebsite(website);
         }
     }//GEN-LAST:event_VisitURLMouseClicked
-
-    private void SortFeesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SortFeesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SortFeesActionPerformed
-
-    private void CB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CB1ActionPerformed
-
-    private void CB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CB3ActionPerformed
-
-    private void CB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CB4ActionPerformed
-
-    private void CB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CB2ActionPerformed
 
     private void VisitURLMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VisitURLMouseEntered
         VisitURL.setBackground(Color.green);

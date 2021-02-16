@@ -361,9 +361,6 @@
                 <Property name="text" type="java.lang.String" value="TUE"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CB2ActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JCheckBox" name="CB1">
               <Properties>
@@ -373,9 +370,6 @@
                 <Property name="text" type="java.lang.String" value="MON"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CB1ActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JCheckBox" name="CB4">
               <Properties>
@@ -385,9 +379,6 @@
                 <Property name="text" type="java.lang.String" value="THU"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CB4ActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JCheckBox" name="CB3">
               <Properties>
@@ -397,9 +388,6 @@
                 <Property name="text" type="java.lang.String" value="WED"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CB3ActionPerformed"/>
-              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -711,7 +699,6 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SortFeesMouseClicked"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SortFeesActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="SortExp">
