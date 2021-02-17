@@ -213,6 +213,11 @@ public class ManageTherapistAddUI extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(147, 205, 186));
 
         Cancel.setText("Cancel");
+        Cancel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CancelMouseClicked(evt);
+            }
+        });
 
         Add.setText("ADD");
         Add.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -534,6 +539,12 @@ public class ManageTherapistAddUI extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_AddMouseClicked
+
+    private void CancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CancelMouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+        new ManageTherapistMainUI().setVisible(true);
+    }//GEN-LAST:event_CancelMouseClicked
 
     /**
      * @param args the command line arguments

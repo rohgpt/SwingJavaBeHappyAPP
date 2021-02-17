@@ -16,31 +16,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ManageTherapistMainUI extends javax.swing.JFrame {
 
-    ArrayList<Therapist> Data;
-    Manager Mng;
-    private int Budget;
-
     /**
      * Creates new form SearchTherapistUI
      */
     public ManageTherapistMainUI() {
         initComponents();
-       
-
-        Mng = new Manager();
-        this.jLabel1.setText("<html>"
-                + "<body>\n"
-                + "Manage<br>"
-                + "Therapist\n"
-                + "</body>\n"
-                + "</html>\n"
-        );
-        Data = Mng.getData();
-       
 
     }
-
- 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -92,11 +74,6 @@ public class ManageTherapistMainUI extends javax.swing.JFrame {
         AddTherapist.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AddTherapistMouseClicked(evt);
-            }
-        });
-        AddTherapist.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddTherapistActionPerformed(evt);
             }
         });
 
@@ -214,23 +191,25 @@ public class ManageTherapistMainUI extends javax.swing.JFrame {
 
     private void DeleteTherapistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteTherapistActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        new ManageTherapistDSUUI("Delete").setVisible(true);
     }//GEN-LAST:event_DeleteTherapistActionPerformed
 
     private void SearchTherapistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchTherapistActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        new ManageTherapistDSUUI("Search").setVisible(true);
     }//GEN-LAST:event_SearchTherapistActionPerformed
 
-    private void AddTherapistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddTherapistActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AddTherapistActionPerformed
-
     private void UpdateTherapistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateTherapistActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+
     }//GEN-LAST:event_UpdateTherapistActionPerformed
 
     private void AddTherapistMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddTherapistMouseClicked
-        // TODO add your handling code here:
-        
+        this.dispose();
+        new ManageTherapistAddUI().setVisible(true);// TODO add your handling code here:
+
     }//GEN-LAST:event_AddTherapistMouseClicked
 
     /**
